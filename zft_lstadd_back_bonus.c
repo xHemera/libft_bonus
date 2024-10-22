@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tobesnar <tobesnar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/20 16:31:56 by tobesnar          #+#    #+#             */
-/*   Updated: 2024/10/20 19:12:17 by tobesnar         ###   ########.fr       */
+/*   Created: 2024/10/20 19:24:07 by tobesnar          #+#    #+#             */
+/*   Updated: 2024/10/20 20:27:18 by tobesnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// ! DO NOT PUSH TO VOGSPHERE
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	write(fd, &c, 1);
+	while (*lst)
+		lst = &(*lst)->next;
+	(*lst) = new;
 }

@@ -6,7 +6,7 @@
 /*   By: tobesnar <tobesnar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:52:24 by tobesnar          #+#    #+#             */
-/*   Updated: 2024/10/20 18:34:43 by tobesnar         ###   ########.fr       */
+/*   Updated: 2024/10/20 19:37:50 by tobesnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,10 @@ void			ft_putendl_fd(char *s, int fd);
 void			ft_putstr_fd(char *s, int fd);
 
 //BONUS
+t_list			*ft_lstnew(void *content);
+void			ft_lstadd_front(t_list **lst, t_list *new);
+int				ft_lstsize(t_list *lst);
+t_list			*ft_lstlast(t_list *lst);
+void			ft_lstadd_back(t_list **lst, t_list *new);
 
 #endif
